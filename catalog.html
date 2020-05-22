@@ -11,33 +11,21 @@
       <a href="index.html">
         <img src="img/logo-technomart.svg" alt="Логотип магазина">
       </a>
-
-      <div>
-        <img src="img/icon-search.svg" alt="Поиск">
-        Поиск
-      </div>
-      <a href="blank.html">
-        <img src="img/icon-bookmark.svg" alt="Закладки">
-        Закладки
-      </a>
-      <a href="blank.html">
-        <img src="img/icon-cart.svg" alt="Корзина">
-        Корзина
-      </a>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <label for="search-field">Поиск</label>
+        <input type="search" name="search" id="search-field" placeholder="Поиск">
+      </form>
+      <a href="blank.html">Закладки</a>
+      <a href="blank.html">Корзина</a>
+      <a href="blank.html">Офрмить заказ</a>
 
       <p>Интернет-магазин<br> строительных материалов<br>
          и инструментов для ремонта</p>
       <p>+7 (812) 555-05-55</p>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-      <a href="">
-        <img src="img/icon-user.svg" alt="Пользователь">
-        Равшан Джамшутович
-      </a>
-      <a href="">
-        <img src="img/icon-logout.svg" alt="Выход">
-        Выход
-      </a>
+      <a href="">Равшан Джамшутович</a>
+      <a href="">Выход</a>
 
       <ul>
         <li><a href="blank.html">Мои заказы</a></li>
@@ -56,6 +44,7 @@
     </nav>
   </header>
   <main>
+    <h1 class="visually-hidden">Каталог</h1>
     <ul>
     <li>
       <a href="index.html">
@@ -81,19 +70,19 @@
   </section>
   <section>
   <h2>Сортировка</h2>
-  <!-- Здесь будет форма сортировки -->
+  <!-- Здесь будет сортировка-->
   </section>
   <section>
     <h2>Производители</h2>
     <ul>
       <li>
-        <p><input type="checkbox" name="manufacturers" value="Bosch">Bosch</p>
+        <p><input type="checkbox" name="manufacturers" value="Bosch" checked>Bosch</p>
       </li>
       <li>
         <p><input type="checkbox" name="manufacturers" value="Интерскол">Интерскол</p>
       </li>
       <li>
-        <p><input type="checkbox" name="manufacturers" value="Makita">Makita</p>
+        <p><input type="checkbox" name="manufacturers" value="Makita" checked>Makita</p>
       </li>
       <li>
         <p><input type="checkbox" name="manufacturers" value="Dewalt">Dewalt</p>
@@ -108,7 +97,7 @@
       <h2>Питание</h2>
     <ul>
       <li>
-        <p><input type="radio" name="supply" value="Аккумуляторные">Аккумуляторные</p>
+        <p><input type="radio" name="supply" value="Аккумуляторные" checked>Аккумуляторные</p>
       </li>
       <li>
         <p><input type="radio" name="supply" value="Сетевые">Сетевые</p>
@@ -318,9 +307,18 @@
       </li>
     </ul>
     <p>Обратная связь:<br>
-       mail@htmlacademy.ru</p>
+       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </p>
     <p>Разработано —<br>
-       htmlacademy.ru</p>
+       <a href="htmlacademy.ru">htmlacademy.ru</a>
+    </p>
   </footer>
+
+  <section>
+    <h2>Товар добавлен в корзину!</h2>
+    <a href="blank.html">Оформить заказ</a>
+    <a href="#">Продолжить покупки</a>
+    <button type="button">Закрыть</button>
+  </section>
   </body>
 </html>

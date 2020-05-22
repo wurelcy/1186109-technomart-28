@@ -8,19 +8,20 @@
   <header>
     <nav>
       <a>
-      <img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина">
+      <img src="img/logo-technomart.svg" alt="Логотип магазина">
       </a>
-
-      <span>Поиск</span>
+      <form class="search" action="https://echo.htmlacademy.ru" method="get">
+        <label for="search-field">Поиск</label>
+        <input type="search" name="search" id="search-field" placeholder="Поиск">
+      </form>
       <a href="blank.html">Закладки</a>
       <a href="blank.html">Корзина</a>
       <a href="blank.html">Офрмить заказ</a>
-
-      <p>Интернет-магазин<br> строительных материалов<br>
+      <p>Интернет-магазин<br>
+         строительных материалов<br>
          и инструментов для ремонта</p>
       <p>+7 (812) 555-05-55</p>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-
       <ul>
         <li><a href="blank.html">Вход</a></li>
         <li><a href="blank.html">Регистрация</a></li>
@@ -38,6 +39,7 @@
     </nav>
   </header>
   <main>
+    <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
     <section>
       <ul>
         <li>
@@ -75,7 +77,7 @@
             <h2>Дрели</h2>
             <p>Соседям на радость!</p>
           </figcaption>
-          <img src="img/dreli.jpg" alt="Дрели">
+          <img src="img/drill.jpg" alt="Дрели">
         </figure>
         <a href="catalog.html">Открыть каталог</a>
       </div>
@@ -85,7 +87,7 @@
       <a href="#">Все популярные товары</a>
       <ul>
         <li>
-          <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
+          <img src="img/bosch-9000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 9000">
           <a href="#">Купить</a>
           <button type="button" name="button">В закладки</button>
           <h3>Перфоратор BOSCH<br>
@@ -98,7 +100,7 @@
             </p>
         </li>
         <li>
-          <img src="img/product-2.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
+          <img src="img/bosch-3000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 3000">
           <a href="#">Купить</a>
           <button type="button" name="button">В закладки</button>
           <h3>Перфоратор BOSCH<br>
@@ -111,7 +113,7 @@
             </p>
         </li>
         <li>
-          <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+          <img src="img/bosch-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
           <a href="#">Купить</a>
           <button type="button" name="button">В закладки</button>
           <h3>Перфоратор BOSCH<br>
@@ -124,7 +126,7 @@
             </p>
         </li>
         <li>
-          <img src="img/product-1.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
+          <img src="img/bosch-2000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 2000">
           <a href="#">Купить</a>
           <button type="button" name="button">В закладки</button>
           <h3>Перфоратор BOSCH<br>
@@ -211,12 +213,12 @@
       <p>Вы можете забрать товар сами,<br>
          заехав в наш офис:</p>
       <a href="blank.html">Заблудились? Напишите нам!</a>
-      <a href="#"> <img src="img/map.jpg" alt="Я карта"> </a>
+      <a href="#"> <img src="img/map.png" alt="Я карта"> </a>
     </section>
   </main>
   <footer>
     <a>
-      <img src="img/index-logo.svg" width="368" height="153" alt="Логотип магазина">
+      <img src="img/logo-technomart.svg" alt="Логотип магазина">
     </a>
     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
        +7 (812) 555-05-55</p>
@@ -235,31 +237,52 @@
        Все права защищены</p>
     <ul>
       <li>
-        <a href="#">Вконтакте</a>
+        <a href="#">
+          <img src="img/icon-vk.svg" alt="Вконтакте">
+        </a>
       </li>
       <li>
-        <a href="#">Фейсбук</a>
+        <a href="#">
+          <img src="img/icon-fb.svg" alt="Фейсбук">
+        </a>
       </li>
       <li>
-        <a href="#">Инстаграм</a>
+        <a href="#">
+          <img src="img/icon-insta.svg" alt="Инстаграм">
+        </a>
       </li>
     </ul>
     <p>Обратная связь:<br>
-       mail@htmlacademy.ru</p>
+       <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    </p>
     <p>Разработано —<br>
-       htmlacademy.ru</p>
+       <a href="htmlacademy.ru">htmlacademy.ru</a>
+    </p>
   </footer>
 
   <section>
-    <h2>Личный кабинет</h2>
-    <p>Введите, пожалуйста, свой логин и пароль</p>
-    <!-- Здесь будет форма логина -->
+    <h2>Карта</h2>
+    <iframe src="https://goo.gl/maps/rgiDVtFsnjbRF5xh9" width="943" height="449"></iframe>
     <button type="button">Закрыть</button>
   </section>
 
   <section>
     <h2>Заблудились? Напишите нам!</h2>
-    <!-- Здесь будет карта -->
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="your-name">Ваше имя:</label>
+        <input id="your-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p>
+        <label for="email">Ваш e-mail:</label>
+        <input id="email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p>
+        <label for="message-us">Текст письма:</label>
+        <textarea name="message-us" rows="8" id="message-us" placeholder="В свободной форме"></textarea>
+      </p>
+      <input type="submit" name="submit-button" value="Отправить">
+    </form>
     <button type="button">Закрыть</button>
   </section>
 

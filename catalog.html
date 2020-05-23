@@ -47,10 +47,7 @@
     <h1 class="visually-hidden">Каталог</h1>
     <ul>
     <li>
-      <a href="index.html">
-        <img src="img/icon-home.svg" alt="Главная">
-        Главная
-      </a>
+      <a href="index.html">Главная</a>
     </li>
     <li>
       <a href="catalog.html">Каталог</a>
@@ -65,47 +62,56 @@
 
   <h1>Перфораторы</h1>
   <section>
-  <h2>Фильтр товаров</h2>
-  <!-- Здесь будет форма фильтра -->
+  <h2>Фильтр</h2>
+  <form action="index.html" method="get">
+    <fieldset>
+      <legend>Цена:</legend>
+      <input type="text" name="min-price" value="0">
+      <input type="text" name="max-price" value="30000">
+    </fieldset>
+    <fieldset>
+      <legend>Производители:</legend>
+      <ul>
+        <li>
+          <p><input type="checkbox" name="manufacturers" value="Bosch" checked>Bosch</p>
+        </li>
+        <li>
+          <p><input type="checkbox" name="manufacturers" value="Интерскол">Интерскол</p>
+        </li>
+        <li>
+          <p><input type="checkbox" name="manufacturers" value="Makita" checked>Makita</p>
+        </li>
+        <li>
+          <p><input type="checkbox" name="manufacturers" value="Dewalt">Dewalt</p>
+        </li>
+        <li>
+          <p><input type="checkbox" name="manufacturers" value="Hitachi">Hitachi</p>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>Питание:</legend>
+      <ul>
+        <li>
+          <p><input type="radio" name="supply" value="Аккумуляторные" checked>Аккумуляторные</p>
+        </li>
+        <li>
+          <p><input type="radio" name="supply" value="Сетевые">Сетевые</p>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="button" name="button">Показать</button>
+  </form>
+
   </section>
   <section>
   <h2>Сортировка</h2>
-  <!-- Здесь будет сортировка-->
+  <button type="button" name="sort-price">По цене</button>
+  <button type="button" name="sort-type">По типу</button>
+  <button type="button" name="sort-functional">По функционалу</button>
+  <button type="button" name="sort-min">С мин</button>
+  <button type="button" name="sort-max">С макс</button>
   </section>
-  <section>
-    <h2>Производители</h2>
-    <ul>
-      <li>
-        <p><input type="checkbox" name="manufacturers" value="Bosch" checked>Bosch</p>
-      </li>
-      <li>
-        <p><input type="checkbox" name="manufacturers" value="Интерскол">Интерскол</p>
-      </li>
-      <li>
-        <p><input type="checkbox" name="manufacturers" value="Makita" checked>Makita</p>
-      </li>
-      <li>
-        <p><input type="checkbox" name="manufacturers" value="Dewalt">Dewalt</p>
-      </li>
-      <li>
-        <p><input type="checkbox" name="manufacturers" value="Hitachi">Hitachi</p>
-      </li>
-    </ul>
-    </section>
-
-    <section>
-      <h2>Питание</h2>
-    <ul>
-      <li>
-        <p><input type="radio" name="supply" value="Аккумуляторные" checked>Аккумуляторные</p>
-      </li>
-      <li>
-        <p><input type="radio" name="supply" value="Сетевые">Сетевые</p>
-      </li>
-    </ul>
-  </section>
-
-  <button type="button" name="button">Показать</button>
   <section>
     <ul>
       <li>
@@ -291,19 +297,13 @@
        Все права защищены</p>
     <ul>
       <li>
-        <a href="#">
-          <img src="img/icon-vk.svg" alt="Вконтакте">
-        </a>
+        <a href="#">Вконтакте</a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/icon-fb.svg" alt="Фейсбук">
-        </a>
+        <a href="#">Фейсбук</a>
       </li>
       <li>
-        <a href="#">
-          <img src="img/icon-insta.svg" alt="Инстаграм">
-        </a>
+        <a href="#">Инстаграм</a>
       </li>
     </ul>
     <p>Обратная связь:<br>

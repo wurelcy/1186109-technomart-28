@@ -288,6 +288,14 @@ img {
   border-radius: 2px;
 }
 
+.cart-btn:hover{
+  background-color: var(--special-green);
+}
+
+.cart-btn:active{
+  background-color: var(--special-darkgreen);
+}
+
 .cart-btn img{
   opacity: 0.5;
 }
@@ -302,6 +310,17 @@ img {
   font-size: 14px;
   line-height: 18px;
 }
+
+.favourites-btn:hover{
+  border-color: var(--basic-blue);
+}
+
+.favourites-btn:active{
+  border-color: var(--basic-grey);
+  color: var(--basic-grey);
+  outline: none;
+}
+
 
 .page-title{
   font-size: 30px;

@@ -430,6 +430,8 @@ img {
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-lightgrey);
 }
@@ -470,6 +472,7 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-align: center;
+  margin-top: auto;
 }
 
 .cart-btn{

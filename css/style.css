@@ -432,8 +432,13 @@ img {
 .catalog-item {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-lightgrey);
+}
+
+.catalog-item img{
+  padding-right: 20px;
 }
 
 .catalog-item a {
@@ -449,7 +454,6 @@ img {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-
 }
 
 .old-price{
@@ -460,7 +464,6 @@ img {
   text-decoration-line: line-through;
   text-transform: uppercase;
   color: var(--basic-grey);
-  text-align: center;
 }
 
 .new-price{
@@ -471,7 +474,6 @@ img {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  text-align: center;
   margin-top: auto;
 }
 

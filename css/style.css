@@ -22,6 +22,7 @@
   --special-darkblue: #161D29;
   --special-lilac: #DC91D8;
   --special-darkred: #BA2732;
+  --special-darkblue: #1D2739;
 }
 
 /* Global */
@@ -75,21 +76,24 @@ img {
   line-height: 24px;
   color: var(--basic-white);
   background-color: var(--basic-background);
+  padding: 0;
 }
+
 .main-header-logo {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 220px;
-  height: 47px;
+  height: 42px;
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 0px 0px var(--special-darkred);
 }
+
 .main-navigation-wrapper {
   margin-bottom: 60px;
-  width: 940px;
   background-color: var(--basic-blue);
   box-shadow: inset 0px -5px 0px var(--basic-darkblue);
+  padding: 0;
 }
 
 .menu{
@@ -102,7 +106,7 @@ img {
 .container {
   width: 940px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
 }
 
 .user-navigation {
@@ -114,37 +118,98 @@ img {
   color: var(--basic-white);
 }
 
+.main-navigation-wrapper a{
+  padding-top: 19px;
+  padding-bottom: 18px;
+  padding-left: 29px;
+  padding-right: 29px;
+}
+
 .main-navigation-wrapper a:hover {
   background-color: var(--basic-darkblue);
 }
 
+.main-navigation-wrapper a:active {
+  background-color: var(--special-darkblue);
+}
+
 .upper-panel {
   width: 100%;
-  height: 42px;
+  min-height: 42px;
   margin-bottom: 46px;
   background-color: var(--basic-darkblue);
+  padding: 0;
 }
 
 .upper-panel .container{
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.search-field input{
-  background-color: var(--basic-darkblue);
-  border: none;
+.search-field{
+  position: relative;
+  flex-grow: 1;
+  margin: 0;
 }
 
-.search-field input::placeholder{
+.search-form input{
+  margin: 0;
+  padding-left: 42px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+.search-form input::placeholder{
   color: var(--basic-white);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  padding: 0;
 }
 
-.search-field input:focus {
+.search-field:focus{
   background-color: var(--basic-white);
+}
+
+.search-form input:focus {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: var(--basic-white);
+  border: none;
+  outline: none;
+}
+
+.upper-panel-item{
+  position: relative;
+}
+
+.upper-panel-item:not(.active) a{
+  padding-right: 26px;
+  padding-left: 49px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+
+.active{
+  background-color: var(--basic-red);
+  width: 136px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 9px;
+}
+
+.make-order a{
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 19px;
+  padding-right: 16px;
 }
 
 .upper-panel-item a:active{
@@ -171,6 +236,40 @@ img {
   margin-bottom: 40px;
 }
 
+/*Icons*/
+
+.upper-panel-item svg{
+  position: absolute;
+  top: 3px;
+  left: 25px;
+  opacity: 0.3;
+}
+
+.search-form svg{
+  position: absolute;
+  top: 6px;
+  left: 15px;
+  opacity: 0.3;
+  z-index: 10;
+}
+
+.search-form:hover svg,
+.upper-panel-item:hover svg{
+  opacity: 1;
+}
+
+.search-form:active svg,
+.upper-panel-item:active svg{
+  opacity: 0.3;
+}
+
+/*??????????????????????*/
+.search:focus+svg path{
+  fill: var(--basic-red);
+}
+
+/***********/
+
 .description{
   color: var(--basic-red);
   font-style: italic;
@@ -191,17 +290,36 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  text-align: center;
   padding-top: 7px;
   padding-bottom: 8px;
   border: 3px solid var(--basic-white);
   margin-bottom: 0;
+  padding-left: 34px;
+
+}
+
+.phone-number{
+  position: relative;
+  width: 270px;
+}
+
+.phone-number::before{
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 19px;
+  background-position: 0 0;
+  top: 16px;
+  left: 40px;
 }
 
 .user-navigation{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .user-navigation a,
@@ -213,10 +331,24 @@ img {
   margin-right: 10px;
 }
 
+.login svg{
+  position: absolute;
+  top: 22px;
+  left: 55px;
+}
+
+.login:hover path{
+  fill: var(--basic-blue);
+}
+
+.login:active path{
+  fill: var(--basic-grey);
+}
+
 .user{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   background-color: var(--basic-white);
 }
 
@@ -226,6 +358,20 @@ img {
   align-items: center;
   list-style: none;
 }
+
+.user-navigation{
+  margin-bottom: auto;
+  padding-top: 20px;
+}
+
+.user-navigation a{
+  padding: 12px 24px;
+}
+
+.user-navigation li:first-child a{
+  padding-left: 45px;
+}
+
 .user-account a{
   color: var(--basic-blue);
   font-size: 16px;
@@ -313,6 +459,50 @@ img {
   color: var(--basic-white);
   background-color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
+}
+
+
+.features-item::after{
+  content: "";
+  background-image: url("../img/icon-materials.svg");
+  position: absolute;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 34px;
+  right: 43px;
+  width: 45px;
+  height: 65px;
+}
+
+.features-row .features-item:nth-child(2)::after{
+  background-image: url("../img/icon-tools.svg");
+  width: 75px;
+  height: 61px;
+  right: 31px;
+}
+
+.features-row .features-item:nth-child(3)::after{
+  background-image: url("../img/icon-vehicle.svg");
+  width: 78px;
+  height: 62px;
+  right: 31px;
+  top: 31px;
+}
+
+.features-column .features-item:first-child::after{
+  background-image: url("../img/icon-sale.svg");
+  width: 59px;
+  height: 72px;
+  right: 45px;
+  top: 26px;
+}
+
+.features-column .features-item:last-child::after{
+  background-image: url("../img/icon-delivery.svg");
+  width: 78px;
+  height: 63px;
+  right: 31px;
+  top: 32px;
 }
 
 .slider{
@@ -412,6 +602,10 @@ img {
   padding-bottom: 99px;
 }
 
+.services .container{
+    position: relative;
+}
+
 .services .section-title{
   padding-top: 64px;
 }
@@ -449,10 +643,12 @@ img {
   background-color: var(--basic-darkblue);
 }
 
-.service-active{
+.service-active,
+.service-active:hover{
   background-color: var(--basic-white);
   color: var(--basic-blue);
 }
+
 
 .service-menu{
   display: flex;
@@ -485,6 +681,18 @@ img {
   color: var(--basic-blue);
   text-transform: uppercase;
   margin: 0;
+}
+
+
+.services .container::after{
+  position: absolute;
+  content: "";
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/delivery.png");
+  top: 250px;
+  right: 0px;
+  z-index: 1;
 }
 
 /*About Info*/
@@ -1027,6 +1235,17 @@ ul .gold{
 .footer-wrapper p a:active{
   color: var(--basic-red);
   text-decoration: none;
+}
+
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: none;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Pop-up*/

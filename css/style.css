@@ -1045,6 +1045,8 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   height: 38px;
   align-items: center;
+  flex-grow: 1;
+
 }
 
 .sort-btns{
@@ -1110,6 +1112,12 @@ img {
 }
 
 /* Catalog */
+
+.catalog-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .popular-list{
   display: flex;
   flex-wrap: wrap;
@@ -1253,24 +1261,30 @@ img {
 .pages{
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 280px;
-  margin-left: 200px;
+  flex-wrap: wrap;
   margin-top: 48px;
   font-family: PT Sans;
   font-size: 13px;
   line-height: 18px;
-
+  padding: 0;
 }
 
-.pages li{
+.pagination-item {
+  margin-right: 10px;
   border: 1px solid var(--basic-lightgrey);
-  border-radius: 2px;
-  padding: 10px;
-  width: 18px;
-  text-align: center;
+}
+
+.pagination-item a{
+  display: block;
+  padding: 10px 15px;
+  color: var(--basic-black);
   text-transform: uppercase;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+  width: 120px;
+  text-align: center;
 }
 
 .pages .current-page{
@@ -1279,23 +1293,16 @@ img {
   border-radius: 2px;
 }
 
-.pages li:not(.current-page):hover{
+.pagination-item:not(.current-page):hover{
   border: 1px solid var(--basic-grey);
 }
 
-.pages li:not(.current-page):active{
+.pagination-item:not(.current-page):active{
   border: 1px solid var(--basic-red);
 }
 
-.pages a{
-  color: var(--basic-black);
-}
 .current-page a{
   color: var(--basic-white);
-}
-
-.pages li:last-child{
-  width: 120px;
 }
 
 .hummerdrill-info{

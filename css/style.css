@@ -63,7 +63,7 @@ img {
 /* Main header */
 
 .main-header {
-  margin-bottom: 59px;
+  /*margin-bottom: 59px;*/
 }
 
 /* Main navigation */
@@ -455,6 +455,7 @@ img {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  margin-top: 59px;
 }
 
 .features-row,
@@ -855,7 +856,7 @@ img {
   list-style: none;
   width: 357px;
   padding: 0;
-  margin-top: -38px;
+  margin-top: 21px;
 }
 
 .hummerdrill li{
@@ -871,15 +872,6 @@ img {
   color: var(--basic-black);
 }
 
-.hummerdrill li:first-child::before{
-  position: absolute;
-  content: "";
-  background-image: url("../img/icon-home.svg");
-  width: 14px;
-  height: 12px;
-  top: 1px;
-}
-
 .hummerdrill li:not(.current-catalog-page)::after{
   position: absolute;
   content: "";
@@ -890,9 +882,6 @@ img {
   right: -27px;
 }
 
-.hummerdrill li:first-child::after{
-  left: 27px;
-}
 
 .catalog-page{
   display: grid;

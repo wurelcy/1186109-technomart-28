@@ -968,7 +968,7 @@ input[type="number"]:focus {
   text-transform: uppercase;
   padding: 0;
   margin-bottom: 15px;
-  border-top: 1px solid var(--basic-grey);
+  border-top: 1px solid var(--basic-lightgrey);
   padding-top: 16px;
   width: 100%;
 }

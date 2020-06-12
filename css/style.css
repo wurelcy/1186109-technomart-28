@@ -614,6 +614,10 @@ input[type="number"]:focus {
   background-image: url("../img/perforatory.jpg");
 }
 
+.hammerdrill-slide{
+  display: none;
+}
+
 .slider-btn{
   border: none;
   background-color: transparent;
@@ -677,6 +681,11 @@ input[type="number"]:focus {
 
 .drill-slide{
   display: none;
+  background-image: url("../img/drill.jpg");
+}
+
+.current-slide{
+  display: block;
 }
 
 .main-button{
@@ -740,6 +749,16 @@ input[type="number"]:focus {
   margin: 0;
 }
 
+.service-list::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/shadow-stick.png");
+  top: -49px;
+  left: 230px;
+}
+
 .service-btn{
   background-color: var(--basic-blue);
   width: 240px;
@@ -755,6 +774,10 @@ input[type="number"]:focus {
   text-align: left;
 }
 
+.service-btn:not(.service-active){
+  box-shadow: 0px -1px 0px #293449, inset 0px 1px 0px #405069;
+}
+
 .service-btn:hover {
   background-color: var(--basic-darkblue);
 }
@@ -765,12 +788,10 @@ input[type="number"]:focus {
   color: var(--basic-blue);
 }
 
-
 .service-menu{
   display: flex;
   position: relative;
   margin-top: 67px;
-
 }
 
 .service-delivery,
@@ -782,11 +803,7 @@ input[type="number"]:focus {
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
-}
-
-.service-guarantee,
-.service-credit{
-  display: none;
+  margin: 0;
 }
 
 .service-title{
@@ -799,16 +816,55 @@ input[type="number"]:focus {
   margin: 0;
 }
 
+.service-credit a{
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+  font-family: Cuprum;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 45px;
+  border-radius: 3px;
+}
 
-.services .container::after{
+.service-credit p,
+.service-delivery p,
+.service-guarantee p{
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.service-delivery::after,
+.service-guarantee::after,
+.service-credit::after{
   position: absolute;
   content: "";
   width: 468px;
   height: 261px;
   background-image: url("../img/delivery.png");
-  top: 250px;
-  right: 0px;
-  z-index: 1;
+  top: 20px;
+  left: 150px;
+}
+
+.service-guarantee::after{
+  top: 0px;
+  left: 239px;
+  background-image: url("../img/guarantee.png");
+}
+
+.service-credit::after{
+  top: 0px;
+  background-image: url("../img/credit.png");
+}
+
+.service-guarantee,
+.service-credit,
+.service-delivery{
+  display: none;
+}
+
+.current-service{
+  display: block;
 }
 
 /*About Info*/

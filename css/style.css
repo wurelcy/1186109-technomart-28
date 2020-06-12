@@ -119,6 +119,7 @@ input[type="number"]:focus {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .container {
@@ -512,6 +513,7 @@ input[type="number"]:focus {
 
 .features-column .features-item:first-child{
   background-color: var(--special-lightgreen);
+  margin-bottom: 0;
 }
 
 .features-column .features-item:last-child{
@@ -597,22 +599,43 @@ input[type="number"]:focus {
 }
 
 .slider{
-  position: relative;
   margin: 0;
   padding: 0;
 }
 
-.slide{
+.slider-item{
+  position: relative;
+  display: block;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   width: 620px;
   height: 266px;
+  background-image: url("../img/perforatory.jpg");
 }
 
-.slide img{
+.slider-btn{
+  border: none;
+  background-color: transparent;
   position: absolute;
-  bottom: 0px;
-  z-index: -1;
+  width: 21px;
+  height: 39px;
+  bottom: 104px;
+  cursor: pointer;
+}
+
+.previous-btn{
+  left: 25px;
+  background-image: url("../img/icon-left.svg");
+}
+
+.next-btn{
+  background-image: url("../img/icon-right.svg");
+  right: 21px;
+}
+
+.slide{
+  margin: 0;
 }
 
 .slide figcaption{
@@ -644,10 +667,8 @@ input[type="number"]:focus {
 
 .open-catalog{
   display: block;
-  position: absolute;
-  bottom: 46px;
   margin-left: 24px;
-
+  margin-top: 97px;
 }
 
 .open-catalog:active{
@@ -956,8 +977,8 @@ input[type="number"]:focus {
   margin-bottom: 25px;
 }
 
-.filter fieldset:last-child{
-  margin-bottom: 34px;
+.filter button{
+  margin-top: 12px;
 }
 
 .filter legend {
@@ -1174,13 +1195,21 @@ input[type="number"]:focus {
 .sort-btns{
   list-style: none;
   display: flex;
-  justify-content: space-around;
   min-width: 375px;
   padding: 0;
+  margin-left: 60px;
+}
+
+.sort-btns li:first-child{
+  padding-right: 70px;
 }
 
 .sort-btns li{
-  padding-left: 15px;
+  padding-right: 65px;
+}
+
+.sort-btns li:last-child{
+  padding-right: 0;
 }
 
 .sort-btns button{
@@ -1205,10 +1234,6 @@ input[type="number"]:focus {
   border-bottom: 1px solid var(--basic-red);
 }
 
-.sort-direction{
-
-}
-
 .direction-btn{
   margin-right: 16px;
   border: none;
@@ -1222,9 +1247,6 @@ input[type="number"]:focus {
 
 .direction-btn:not(.sorted):hover path{
   fill: var(--basic-black);
-}
-
-.direction-btn:last-child{
 }
 
 .direction-btn:last-child path{

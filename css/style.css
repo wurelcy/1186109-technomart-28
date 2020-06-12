@@ -29,6 +29,26 @@
   --special-shadow: #8E1E26;
 }
 
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* Global */
 
 body {
@@ -269,7 +289,7 @@ input[type="number"]:focus {
 
 .search-form svg{
   position: absolute;
-  top: 6px;
+  top: 9px;
   left: 15px;
   opacity: 0.3;
   z-index: 10;
@@ -285,12 +305,13 @@ input[type="number"]:focus {
   opacity: 0.3;
 }
 
-/*??????????????????????*/
 .search:focus+svg path{
-  top: 18px;
   fill: var(--basic-red);
 }
-/*************************/
+
+.search:focus+svg{
+  top: 12px;
+}
 
 /*Header content*/
 
@@ -1817,9 +1838,9 @@ ul .gold{
 
 .feedback-form input,
 .feedback-form textarea{
-  width: 200px;
+  width: 196px;
   border: 2px solid var(--basic-grey);
-  padding: 7px;
+  padding: 7px 0;
   padding-left: 12px;
   border-radius: 2px;
 }
@@ -1848,10 +1869,11 @@ ul .gold{
 }
 
 .feedback-form textarea{
-  width: 440px;
+  width: 444px;
   margin-bottom: 37px;
   resize: none;
 }
+
 
 .submit-button{
   font-family: Cuprum;
@@ -1944,5 +1966,6 @@ ul .gold{
 /*Modal show*/
 
 .modal-show{
-  display: block;
+  display: flex;
+  animation: bounce 0.6s;
 }

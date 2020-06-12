@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link href="normalize.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
   </head>
   <body class="page-body">
   <header class="main-header">
@@ -314,7 +315,7 @@
           <h2 class="section-title">Контакты</h2>
           <p>Вы можете забрать товар сами,<br>
              заехав в наш офис:</p>
-          <a href="#"> <img src="img/map.png" width="300" height="158" alt="Карта"></a>
+          <a href="#" class="map-link"> <img src="img/map.png" width="300" height="158" alt="Карта"></a>
           <a href="#" class="button write-button">Заблудились? Напишите нам!</a>
         </div>
       </section>
@@ -373,7 +374,7 @@
     </div>
   </footer>
 
-  <section class="pop-up modal-map">
+  <section class="pop-up modal-map ">
     <h2 class="visually-hidden">Карта</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412406!2d30.320894616211245!3d59.938796869047785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1591982435934!5m2!1sru!2sru" width="943" height="449" allowfullscreen>
     </iframe>
@@ -402,5 +403,15 @@
     <button class="modal-close" type="button" aria-label="close-popup"></button>
   </section>
 
+  <section class="pop-up modal-cart">
+    <h2>Товар добавлен в корзину!</h2>
+    <div class="button-area">
+      <a href="blank.html">Оформить заказ</a>
+      <a href="#">Продолжить покупки</a>
+    </div>
+    <button class="modal-close" type="button" aria-label="close-popup"></button>
+  </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

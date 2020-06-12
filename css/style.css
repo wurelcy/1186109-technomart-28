@@ -1174,9 +1174,13 @@ input[type="number"]:focus {
 .sort-btns{
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   min-width: 375px;
+  padding: 0;
+}
 
+.sort-btns li{
+  padding-left: 15px;
 }
 
 .sort-btns button{
@@ -1202,19 +1206,14 @@ input[type="number"]:focus {
 }
 
 .sort-direction{
-  margin-left: 46px;
-  position: relative;
+
 }
 
 .direction-btn{
-  background-color: transparent;
+  margin-right: 16px;
   border: none;
-  position: absolute;
-  content: "";
   width: 11px;
   height: 10px;
-  right: 48px;
-  bottom: 0;
 }
 
 .direction-btn path{
@@ -1226,7 +1225,6 @@ input[type="number"]:focus {
 }
 
 .direction-btn:last-child{
-  right: 18px;
 }
 
 .direction-btn:last-child path{
@@ -1526,6 +1524,10 @@ input[type="number"]:focus {
 .footer-info{
   padding-bottom: 0;
   margin-bottom: 54px;
+}
+
+.footer-info p{
+  padding-top: 22px;
 }
 
 .footer-logo{

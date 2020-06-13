@@ -659,23 +659,19 @@ input[type="number"]:focus {
   right: 21px;
 }
 
-.slide{
-  margin: 0;
-}
-
-.slider-caption{
+ .slider-caption{
   padding-left: 24px;
   padding-top: 24px;
   background-color: rgba(0, 0, 0, 0.25);
   padding-bottom: 16px;
 }
 
-.slide h2{
+.slider-item h2{
   margin: 0;
   margin-bottom: 5px;
 }
 
-.slide p{
+.slider-item p{
   margin: 0;
   color: var(--basic-white);
   font-size: 18px;

@@ -18,6 +18,7 @@ var slideDrill = document.querySelector(".drill-slide");
 var cartLink = document.querySelector(".cart-btn");
 var cartPopup = document.querySelector(".modal-cart");
 var cartClose = cartPopup.querySelector(".modal-close");
+var cartContinue = cartPopup.querySelector(".close-link");
 
 /*Feedback*/
 
@@ -54,6 +55,13 @@ cartClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   cartPopup.classList.remove("modal-show");
 });
+
+cartContinue.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.remove("modal-show");
+});
+
+/*Esc*/
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {

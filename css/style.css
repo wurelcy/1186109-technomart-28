@@ -123,7 +123,7 @@ input[type="number"]:focus {
   justify-content: center;
   align-items: center;
   width: 220px;
-  height: 41px;
+  height: 42px;
   background-color: var(--basic-red);
   box-shadow: 0px 5px 0px 0px  var(--basic-darkred);
 }
@@ -143,7 +143,7 @@ input[type="number"]:focus {
 .menu{
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  /*justify-content: space-between;*/
   list-style: none;
   flex-wrap: wrap;
 }
@@ -165,10 +165,19 @@ input[type="number"]:focus {
 
 .main-navigation-wrapper a{
   padding-top: 19px;
-  padding-bottom: 18px;
+  padding-bottom: 15px;
   padding-left: 29px;
   padding-right: 29px;
 }
+
+.main-navigation-wrapper li:first-child a{
+  margin-left: 23px;
+}
+
+.main-navigation-wrapper li:last-child a{
+  margin-right: 16px;
+}
+
 
 .main-navigation-wrapper a:hover {
   background-color: var(--basic-darkblue);
@@ -238,7 +247,11 @@ input[type="number"]:focus {
   padding-right: 26px;
   padding-left: 43px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
+}
+
+.upper-panel-item:not(.active) a{
+  padding-right: 38px;
 }
 
 .active a{
@@ -249,7 +262,7 @@ input[type="number"]:focus {
 
 .make-order a{
   padding-top: 10px;
-  padding-bottom:10px;
+  padding-bottom: 11px;
   padding-left: 19px;
   padding-right: 16px;
   vertical-align: middle;
@@ -296,8 +309,8 @@ input[type="number"]:focus {
 
 .search-form svg{
   position: absolute;
-  top: 9px;
-  left: 15px;
+  top: 10px;
+  left: 17px;
   opacity: 0.3;
   z-index: 10;
 }
@@ -362,7 +375,11 @@ input[type="number"]:focus {
 }
 
 .contact-information{
-  margin-left: 40px;
+  margin-left: 43px;
+}
+
+.contact-information > p{
+  margin-top: 2px;
 }
 
 .phone-number::before{
@@ -374,7 +391,7 @@ input[type="number"]:focus {
   height: 19px;
   background-position: 0 0;
   top: 13px;
-  left: 40px;
+  left: 39px;
 }
 
 .user-navigation{
@@ -421,7 +438,7 @@ input[type="number"]:focus {
   display: flex;
   justify-content: space-between;
   background-color: var(--basic-white);
-  padding: 12px 0;
+  padding: 11px 0;
   padding-left: 56px;
   text-align: center;
 }
@@ -433,6 +450,7 @@ input[type="number"]:focus {
 .user a:first-child svg {
   position: absolute;
   left: 15px;
+  top: 13px;
 }
 
 .user a:last-child {
@@ -440,7 +458,7 @@ input[type="number"]:focus {
   padding: 0;
   margin-top: 2px;
   padding-left: 20px;
-  padding-right: 14px;
+  padding-right: 17px;
   align-self: center;
 }
 
@@ -451,6 +469,7 @@ input[type="number"]:focus {
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-top: 4px;
 }
 
 .user-account li:first-child{
@@ -1004,6 +1023,7 @@ input[type="number"]:focus {
   height: 38px;
   margin-bottom: 0;
 }
+
 /*Catalog page*/
 
 .hummerdrill{
@@ -1012,6 +1032,7 @@ input[type="number"]:focus {
   list-style: none;
   width: 357px;
   padding: 0;
+  margin: 0;
   margin-top: 21px;
 }
 
@@ -1037,7 +1058,6 @@ input[type="number"]:focus {
   top: 2px;
   right: -27px;
 }
-
 
 .catalog-page{
   display: grid;
@@ -1144,8 +1164,8 @@ input[type="number"]:focus {
   position: absolute;
   left: -35px;
   top: -2px;
-  width: 19px;
-  height: 19px;
+  width: 23px;
+  height: 23px;
   border: 2px solid var(--basic-grey);
   border-radius: 3px;
 }
@@ -1171,8 +1191,8 @@ input[type="number"]:focus {
   position: absolute;
   left: -35px;
   top: -1px;
-  width: 17px;
-  height: 17px;
+  width: 25px;
+  height: 25px;
   border: 4px solid var(--basic-grey);
   border-radius: 50%;
 }
@@ -1203,7 +1223,7 @@ input[type="number"]:focus {
 
 .range-controls {
   position: relative;
-  height: 41px;
+  height: 80px;
   background-color: var(--basic-warm);
   border-radius: 5px;
   margin-bottom: 9px;
@@ -1214,7 +1234,7 @@ input[type="number"]:focus {
 
 .range-controls .scale {
   height: 2px;
-  background-color: var(--basic-grey);
+  background-color: var(--basic-lightgrey);
 }
 
 .range-controls .bar {
@@ -1225,10 +1245,10 @@ input[type="number"]:focus {
 
 .range-controls .toggle{
   position: absolute;
-  top: 31px;
+  top: 29px;
   left: 0;
-  width: 4px;
-  height: 4px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: 8px solid var(--basic-white);
   background-color: var(--basic-grey);
@@ -1238,11 +1258,11 @@ input[type="number"]:focus {
 }
 
 .range-controls .toggle-min{
-  left: 20px;
+  left: 19px;
 }
 
 .range-controls .toggle-max{
-  left: 158px;
+  left: 159px;
 }
 
 .price-controls {
@@ -1269,7 +1289,7 @@ input[type="number"]:focus {
   background-color: var(--basic-warm);
   border: none;
   padding: 10px;
-  width: 75px;
+  width: 95px;
   border-radius: 5px;
 }
 
@@ -1381,7 +1401,8 @@ input[type="number"]:focus {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-content: start;
-  gap: 18px;
+  gap: 20px;
+  grid-row-gap: 18px;
   padding: 0;
   margin-top: 0;
 }
@@ -1402,14 +1423,14 @@ input[type="number"]:focus {
   content: "NEW";
   position: absolute;
   width: 100px;
-  height: 25px;
+  height: 30px;
   background-color: var(--basic-red);
   color: var(--basic-white);
   text-align: center;
   padding-top: 5px;
   transform: rotate(45deg);
-  right: -25px;
-  top: 10px;
+  right: -26px;
+  top: 5px;
 }
 
 .catalog-item:hover,
@@ -1430,8 +1451,13 @@ input[type="number"]:focus {
 }
 
 .catalog-item-image{
-  margin-top: 29px;
-  padding-right: 20px;
+  margin-top: 21px;
+  padding-right: 11px;
+}
+
+.catalog-item:nth-child(3n+4) .catalog-item-image,
+.catalog-item:nth-child(3n+6) .catalog-item-image{
+  margin-top: 28px;
 }
 
 .catalog-item a {
@@ -1448,7 +1474,12 @@ input[type="number"]:focus {
   line-height: 20px;
   text-align: center;
   margin-bottom: 0;
-  margin-top: 20px;
+  margin-top: 22px;
+}
+
+.catalog-item:nth-child(3n+4) .catalog-item-title,
+.catalog-item:nth-child(3n+6) .catalog-item-title{
+  margin-top: 30px;
 }
 
 .old-price{
@@ -1472,10 +1503,13 @@ input[type="number"]:focus {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  margin: 0;
+  margin-right: 5px;
   margin-top: auto;
   padding: 10px 32px;
-  padding-right: 20px;
+  padding-right: 25px;
   border-radius: 3px;
+  margin-bottom: 21px;
 }
 
 .new-price::after{
@@ -1546,7 +1580,9 @@ input[type="number"]:focus {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  padding: 10px 0;
+  padding: 0;
+  padding-top: 8px;
+  padding-bottom: 6px;
   width: 135px;
 }
 
@@ -1570,12 +1606,16 @@ input[type="number"]:focus {
   text-transform: uppercase;
   color: var(--basic-blue);
   background-color: var(--basic-background);
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .pages{
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   margin-top: 48px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
@@ -1586,25 +1626,26 @@ input[type="number"]:focus {
 .pagination-item {
   margin-right: 10px;
   border: 1px solid var(--basic-lightgrey);
+  border-radius: 3px;
 }
 
 .pagination-item a{
   display: block;
-  padding: 10px 15px;
+  padding: 9px 15px;
   color: var(--basic-black);
   text-transform: uppercase;
 }
 
 .pagination-item:last-child {
   margin-right: 0;
-  width: 120px;
+  width: 140px;
   text-align: center;
 }
 
 .pages .current-page{
   background-color: var(--basic-red);
-  border: 1px solid var(--basic-red);
-  border-radius: 2px;
+  border: 0;
+  border-radius: 3px;
 }
 
 .pagination-item:not(.current-page):hover{
@@ -1619,6 +1660,8 @@ input[type="number"]:focus {
   color: var(--basic-white);
 }
 
+/*Hummerdrill Info*/
+
 .hummerdrill-info{
   margin-top: 59px;
   background-color: var(--basic-background);
@@ -1627,6 +1670,8 @@ input[type="number"]:focus {
 }
 
 .hummerdrill-info h3{
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -1634,6 +1679,7 @@ input[type="number"]:focus {
 }
 
 .hummerdrill-info p{
+  margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -1654,6 +1700,7 @@ input[type="number"]:focus {
 }
 
 .footer-info p{
+  margin: 0;
   padding-top: 22px;
 }
 
@@ -1690,8 +1737,8 @@ input[type="number"]:focus {
   list-style: none;
 }
 
-ul .gold{
-  padding-top: 25px
+.footer-navigation .gold{
+  padding-top: 25px;
 }
 
 .footer-navigation li{
@@ -1721,33 +1768,35 @@ ul .gold{
   background-color: var(--basic-darkblue);
   font-size: 16px;
   line-height: 18px;
-  padding-top: 34px;
+  padding-top: 35px;
   padding-bottom: 29px;
 }
 
 .footer-wrapper p{
+  padding: 0;
   margin: 0;
 }
 
 .social{
   width: 140px;
   display: flex;
-  justify-content: space-between;
   list-style: none;
   margin: 0;
-  margin-left: 45px;
-  margin-right: 50px;
+  margin-left: 110px;
+  margin-top: 5px;
+  margin-right: 138px;
   align-items: center;
 }
 
 .social a{
   background-color: var(--special-darkblue);
   color: var(--basic-white);
-  padding: 12px 22px;
+  padding: 11px 21px;
   border-radius: 50%;
   background-image: url("../img/icon-vk.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 3px;
 }
 
 .social li:nth-child(2) a{
@@ -1765,6 +1814,15 @@ ul .gold{
 
 .footer-wrapper p a{
   color: var(--basic-yellow);
+}
+
+.footer-wrapper p:last-child {
+  margin-left: 36px;
+  margin-right: 15px;
+}
+
+.footer-wrapper p:nth-child(2) {
+  margin-right: 51px;
 }
 
 .footer-wrapper p a:hover{

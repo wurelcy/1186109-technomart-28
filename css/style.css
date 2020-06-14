@@ -490,7 +490,7 @@ input[type="number"]:focus {
 }
 
 .user-navigation a{
-  padding: 12px 24px;
+  padding: 11px 24px;
 }
 
 .user-navigation li:first-child a{
@@ -547,6 +547,7 @@ input[type="number"]:focus {
 .features-item{
   position: relative;
   padding: 20px;
+  padding-left: 22px;
   margin-bottom: 20px;
   width: 300px;
   height: 123px;
@@ -585,7 +586,7 @@ input[type="number"]:focus {
   display: block;
   text-align: center;
   padding: 10px;
-  width: 115px;
+  width: 135px;
   margin-top: 14px;
   color: var(--basic-white);
   background-color: rgba(255, 255, 255, 0.3);
@@ -617,6 +618,7 @@ input[type="number"]:focus {
 .features-item .new-item{
   top: 0;
   right: 0;
+
 }
 
 .features-row .features-item:nth-child(2)::before{
@@ -746,6 +748,7 @@ input[type="number"]:focus {
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-red);
+  margin-right: 5px;
 }
 
 .popular{
@@ -755,11 +758,14 @@ input[type="number"]:focus {
   justify-content: space-between;
   padding-left: 28px;
   padding-right: 14px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   color: var(--basic-blue);
   align-items: center;
 }
 
 .popular h2{
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -771,6 +777,7 @@ input[type="number"]:focus {
 .services{
   width: 100%;
   background-color: var(--basic-background);
+  margin: 0;
   margin-bottom: 70px;
   padding-bottom: 99px;
 }
@@ -787,6 +794,7 @@ input[type="number"]:focus {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin-bottom: 0;
 }
 
 .service-list{
@@ -795,6 +803,7 @@ input[type="number"]:focus {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  margin-top: 5px;
 }
 
 .service-list::after{
@@ -818,7 +827,7 @@ input[type="number"]:focus {
   color: var(--basic-white);
   padding-top: 13px;
   padding-left: 22px;
-  padding-bottom: 17px;
+  padding-bottom: 19px;
   text-align: left;
 }
 
@@ -890,7 +899,7 @@ input[type="number"]:focus {
   width: 468px;
   height: 261px;
   background-image: url("../img/delivery.png");
-  top: 20px;
+  top: 25px;
   left: 150px;
 }
 
@@ -947,10 +956,10 @@ input[type="number"]:focus {
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .contact-info img{
+  margin: 0;
   padding: 0;
 }
 
@@ -968,14 +977,16 @@ input[type="number"]:focus {
   margin-bottom: 32px;
 }
 
-.contact-info a{
+.contact-info .map-link{
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 .partners {
   list-style: none;
-  margin-top: 0;
+  margin: 0;
+  margin-top: 2px;
+  padding-left: 37px;
 }
 
 .partners li{
@@ -991,7 +1002,7 @@ input[type="number"]:focus {
   width: 25px;
   height: 2px;
   background-color: var(--basic-red);
-  left: -37px;
+  left: -38px;
   top: 11px;
 }
 
@@ -1021,7 +1032,7 @@ input[type="number"]:focus {
 .contact-info .write-button{
   width: 300px;
   height: 38px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /*Catalog page*/
@@ -1102,10 +1113,6 @@ input[type="number"]:focus {
   margin-bottom: 25px;
 }
 
-.filter button{
-  margin-top: 12px;
-}
-
 .filter legend {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
@@ -1125,6 +1132,10 @@ input[type="number"]:focus {
   margin-bottom: 0;
 }
 
+.filter .power-section{
+  margin-bottom: 22px;
+}
+
 .filter ul {
   list-style: none;
   line-height: 19px;
@@ -1136,13 +1147,9 @@ input[type="number"]:focus {
 }
 
 .filter-option {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   padding-left: 35px;
   padding-top: 2px;
-}
-
-.filter-option:last-child{
-  margin-bottom: 0;
 }
 
 .filter-option label {
@@ -1150,6 +1157,14 @@ input[type="number"]:focus {
   display: block;
   cursor: pointer;
   user-select: none;
+}
+
+.filter-radio {
+  margin-bottom: 22px;
+}
+
+.filter-option:last-child{
+  margin-bottom: 0;
 }
 
 .filter-checkbox svg {
@@ -1303,6 +1318,7 @@ input[type="number"]:focus {
   height: 38px;
   background-color: var(--basic-white);
   border: 1px solid var(--basic-lightgrey);
+  margin-top: 14px;
 }
 
 .sort{
@@ -1322,7 +1338,7 @@ input[type="number"]:focus {
   display: flex;
   min-width: 375px;
   padding: 0;
-  margin-left: 60px;
+  margin-left: 71px;
 }
 
 .sort-btns li:first-child{
@@ -1341,7 +1357,7 @@ input[type="number"]:focus {
   border: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
-  line-height: 18px;
+  line-height: 15px;
   text-transform: uppercase;
   background-color: transparent;
   border-bottom: 1px dotted var(--basic-red);
@@ -1360,7 +1376,7 @@ input[type="number"]:focus {
 }
 
 .direction-btn{
-  margin-right: 16px;
+  margin-right: 19px;
   border: none;
   width: 11px;
   height: 10px;
@@ -1391,7 +1407,8 @@ input[type="number"]:focus {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  padding-top: 10px;
+  margin: 0;
+  margin-top: 21px;
   margin-bottom: 70px;
   list-style: none;
 }
@@ -1431,6 +1448,7 @@ input[type="number"]:focus {
   transform: rotate(45deg);
   right: -26px;
   top: 5px;
+  z-index: 2;
 }
 
 .catalog-item:hover,
@@ -1450,14 +1468,38 @@ input[type="number"]:focus {
   margin-bottom: 20px;
 }
 
+.manufacturer-item:nth-child(n + 5){
+    margin-bottom: 0px;
+}
+
+.manufacturer-item a{
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-item-image{
   margin-top: 21px;
   padding-right: 11px;
 }
 
 .catalog-item:nth-child(3n+4) .catalog-item-image,
-.catalog-item:nth-child(3n+6) .catalog-item-image{
+.catalog-item:nth-child(3n+6) .catalog-item-image {
   margin-top: 28px;
+}
+
+.popular-list li:nth-child(2) .catalog-item-image{
+    margin-top: 28px;
+    margin-bottom: 8px;
+}
+
+.popular-list li:first-child .catalog-item-image{
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.popular-list li:first-child .catalog-item-title{
+  margin-top: 0;
 }
 
 .catalog-item a {
@@ -1528,10 +1570,11 @@ input[type="number"]:focus {
   z-index: -1;
   flex-direction: column;
   padding: 0;
-  padding-left: 13px;
+  padding-left: 33px;
+  padding-right: 25px;
   padding-bottom: 20px;
-  margin-left: 28px;
-  margin-top: 38px;
+  margin-left: 8px;
+  margin-top: 37px;
   align-self: flex-start;
 }
 

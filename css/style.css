@@ -86,6 +86,12 @@ input[type="number"]:focus {
   -moz-appearance: number-input;
 }
 
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
 /*Grid*/
 
 .page {
@@ -117,7 +123,7 @@ input[type="number"]:focus {
   justify-content: center;
   align-items: center;
   width: 220px;
-  height: 42px;
+  height: 41px;
   background-color: var(--basic-red);
   box-shadow: 0px 5px 0px 0px  var(--basic-darkred);
 }
@@ -174,7 +180,7 @@ input[type="number"]:focus {
 
 .upper-panel {
   width: 100%;
-  min-height: 42px;
+  min-height: 41px;
   margin-bottom: 46px;
   background-color: var(--basic-darkblue);
   padding: 0;
@@ -216,7 +222,7 @@ input[type="number"]:focus {
 }
 
 .search-form input:focus {
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-white);
@@ -232,7 +238,7 @@ input[type="number"]:focus {
   padding-right: 26px;
   padding-left: 43px;
   padding-top: 10px;
-  padding-bottom: 11px;
+  padding-bottom: 10px;
 }
 
 .active a{
@@ -242,10 +248,11 @@ input[type="number"]:focus {
 }
 
 .make-order a{
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom:10px;
   padding-left: 19px;
   padding-right: 16px;
+  vertical-align: middle;
 }
 
 .upper-panel-item a:active{
@@ -320,7 +327,7 @@ input[type="number"]:focus {
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
 .description p,
@@ -340,17 +347,22 @@ input[type="number"]:focus {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  padding-top: 7px;
-  padding-bottom: 8px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 42px;
+  padding-left: 71px;
   border: 3px solid var(--basic-white);
   margin: 0;
-  padding-left: 34px;
-
 }
 
 .phone-number{
   position: relative;
-  width: 270px;
+  align-self: center;
+}
+
+.contact-information{
+  margin-left: 40px;
 }
 
 .phone-number::before{
@@ -361,7 +373,7 @@ input[type="number"]:focus {
   width: 18px;
   height: 19px;
   background-position: 0 0;
-  top: 16px;
+  top: 13px;
   left: 40px;
 }
 
@@ -442,20 +454,20 @@ input[type="number"]:focus {
 }
 
 .user-account li:first-child{
-  padding-right: 40px;
+  padding-right: 32px;
   position: relative;
 }
 
 .user-account li:first-child::after{
   position: absolute;
   content: "";
-  width: 2px;
-  height: 2px;
+  width: 4px;
+  height: 4px;
   background-color: var(--basic-blue);
   border: 1px solid transparent;
   border-radius: 50%;
   top: 10px;
-  right: 19px;
+  right: 14px;
 }
 
 .user-navigation a{
@@ -517,8 +529,8 @@ input[type="number"]:focus {
   position: relative;
   padding: 20px;
   margin-bottom: 20px;
-  width: 260px;
-  height: 83px;
+  width: 300px;
+  height: 123px;
   background-color: var(--special-yellow);
   list-style: none;
   overflow: hidden;
@@ -753,7 +765,7 @@ input[type="number"]:focus {
 }
 
 .service-description{
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -780,7 +792,7 @@ input[type="number"]:focus {
   background-color: var(--basic-blue);
   width: 240px;
   border: none;
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -816,7 +828,7 @@ input[type="number"]:focus {
 .service-credit{
   position: absolute;
   left: 320px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 24px;
@@ -824,7 +836,7 @@ input[type="number"]:focus {
 }
 
 .service-title{
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -836,7 +848,7 @@ input[type="number"]:focus {
 .service-credit a{
   background-color: var(--basic-red);
   color: var(--basic-white);
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
@@ -895,7 +907,7 @@ input[type="number"]:focus {
 .section-title {
   margin: 0;
   margin-bottom: 24px;
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 30px;
@@ -925,7 +937,7 @@ input[type="number"]:focus {
 
 .company p,
 .contact-info p{
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: var(--basic-black);
   font-size: 13px;
   line-height: 24px;
@@ -1004,7 +1016,7 @@ input[type="number"]:focus {
 }
 
 .hummerdrill li{
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: var(--basic-black);
   font-size: 13px;
   line-height: 18px;
@@ -1042,7 +1054,7 @@ input[type="number"]:focus {
 
 .filter-list h3{
   background-color: var(--basic-warm);
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 13px;
@@ -1075,7 +1087,7 @@ input[type="number"]:focus {
 }
 
 .filter legend {
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
@@ -1097,7 +1109,7 @@ input[type="number"]:focus {
   list-style: none;
   line-height: 19px;
   font-size: 15px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -1307,7 +1319,7 @@ input[type="number"]:focus {
 
 .sort-btns button{
   border: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1430,7 +1442,7 @@ input[type="number"]:focus {
 }
 
 .catalog-item-title{
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -1440,7 +1452,7 @@ input[type="number"]:focus {
 }
 
 .old-price{
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1453,7 +1465,7 @@ input[type="number"]:focus {
 
 .new-price{
   position: relative;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 17px;
   line-height: 18px;
@@ -1526,7 +1538,7 @@ input[type="number"]:focus {
 }
 
 .favourites-btn{
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   color: var(--basic-blue);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
@@ -1565,7 +1577,7 @@ input[type="number"]:focus {
   display: flex;
   flex-wrap: wrap;
   margin-top: 48px;
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   padding: 0;
@@ -1622,7 +1634,7 @@ input[type="number"]:focus {
 }
 
 .hummerdrill-info p{
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
@@ -1858,7 +1870,7 @@ ul .gold{
 
 .feedback-form input::placeholder,
 .feedback-form textarea::placeholder{
-  font-family: PT Sans;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-grey);
@@ -1872,7 +1884,7 @@ ul .gold{
 
 
 .submit-button{
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   align-self: center;
@@ -1916,7 +1928,7 @@ ul .gold{
 
 .modal-cart h2{
   position: relative;
-  font-family: Cuprum;
+  font-family: "Cuprum", Arial, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;

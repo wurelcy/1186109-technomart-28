@@ -11,9 +11,11 @@ var mapClose = mapPopup.querySelector(".modal-close");
 
 var slideFwdButton = document.querySelector(".next-btn");
 var slideBackButton = document.querySelector(".previous-btn");
-var slide = document.querySelector(".slider-item");
+/*var slide = document.querySelector(".slider-item");*/
 var slideHummerdrill = document.querySelector(".hammerdrill-slide");
 var slideDrill = document.querySelector(".drill-slide");
+var indicatorFirst = document.querySelector(".first-indicator");
+var indicatorSecond = document.querySelector(".second-indicator");
 
 var cartLink = document.querySelector(".cart-btn");
 var cartPopup = document.querySelector(".modal-cart");
@@ -75,18 +77,22 @@ window.addEventListener("keydown", function (evt) {
 
 /*Slider*/
 
-slideFwdButton.addEventListener("click", function (evt) {
+ slideBackButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (slideHummerdrill.classList.contains('current-slide')) {
     slideHummerdrill.classList.toggle("current-slide");
     slideDrill.classList.toggle("current-slide");
+    indicatorFirst.classList.toggle("current-indicator");
+    indicatorSecond.classList.toggle("current-indicator");
   }
 });
 
-slideBackButton.addEventListener("click", function (evt) {
+slideFwdButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (slideDrill.classList.contains('current-slide')) {
     slideDrill.classList.toggle("current-slide");
     slideHummerdrill.classList.toggle("current-slide");
+    indicatorFirst.classList.toggle("current-indicator");
+    indicatorSecond.classList.toggle("current-indicator");
   }
 });

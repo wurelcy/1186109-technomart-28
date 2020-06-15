@@ -692,6 +692,34 @@ input[type="number"]:focus {
   right: 21px;
 }
 
+.indication{
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  bottom: 36px;
+}
+
+.first-slide{
+  left: 295px;
+}
+
+.second-slide{
+  right: 295px;
+}
+
+.current-indicator{
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: var(--basic-red);
+  top: 2px;
+  left: 2px;
+
+}
+
  .slider-caption{
   padding-left: 24px;
   padding-top: 24px;

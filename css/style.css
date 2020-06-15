@@ -1706,6 +1706,7 @@ input[type="number"]:focus {
 /*Hummerdrill Info*/
 
 .hummerdrill-info{
+  width: 100%;
   margin-top: 59px;
   background-color: var(--basic-background);
   padding-top: 64px;

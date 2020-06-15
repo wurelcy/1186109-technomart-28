@@ -245,12 +245,12 @@ input[type="number"]:focus {
 
 .upper-panel-item a{
   padding-right: 26px;
-  padding-left: 43px;
+  padding-left: 49px;
   padding-top: 10px;
   padding-bottom: 11px;
 }
 
-.upper-panel-item:not(.active) a{
+.catalog-header .upper-panel-item:not(.active) a{
   padding-right: 38px;
 }
 
@@ -298,7 +298,7 @@ input[type="number"]:focus {
 .upper-panel-item svg{
   position: absolute;
   top: 3px;
-  left: 20px;
+  left: 26px;
   opacity: 0.3;
 }
 
@@ -353,7 +353,9 @@ input[type="number"]:focus {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  margin-left: 23px;
 }
+
 
 .phone-number p{
   color: var(--basic-red);
@@ -374,7 +376,7 @@ input[type="number"]:focus {
   align-self: center;
 }
 
-.contact-information{
+.catalog-header .contact-information{
   margin-left: 43px;
 }
 
@@ -495,6 +497,7 @@ input[type="number"]:focus {
 
 .user-navigation li:first-child a{
   padding-left: 45px;
+  padding-right: 27px;
 }
 
 .user-account a{

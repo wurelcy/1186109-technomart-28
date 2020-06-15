@@ -11,7 +11,6 @@ var mapClose = mapPopup.querySelector(".modal-close");
 
 var slideFwdButton = document.querySelector(".next-btn");
 var slideBackButton = document.querySelector(".previous-btn");
-/*var slide = document.querySelector(".slider-item");*/
 var slideHummerdrill = document.querySelector(".hammerdrill-slide");
 var slideDrill = document.querySelector(".drill-slide");
 var indicatorFirst = document.querySelector(".first-indicator");
@@ -82,6 +81,7 @@ window.addEventListener("keydown", function (evt) {
   if (slideHummerdrill.classList.contains('current-slide')) {
     slideHummerdrill.classList.toggle("current-slide");
     slideDrill.classList.toggle("current-slide");
+    
     indicatorFirst.classList.toggle("current-indicator");
     indicatorSecond.classList.toggle("current-indicator");
   }
@@ -92,6 +92,7 @@ slideFwdButton.addEventListener("click", function (evt) {
   if (slideDrill.classList.contains('current-slide')) {
     slideDrill.classList.toggle("current-slide");
     slideHummerdrill.classList.toggle("current-slide");
+
     indicatorFirst.classList.toggle("current-indicator");
     indicatorSecond.classList.toggle("current-indicator");
   }

@@ -618,7 +618,6 @@ input[type="number"]:focus {
 .features-item .new-item{
   top: 0;
   right: 0;
-
 }
 
 .features-row .features-item:nth-child(2)::before{
@@ -719,13 +718,6 @@ input[type="number"]:focus {
   left: 2px;
 
 }
-
- /*.slider-caption{
-  padding-left: 24px;
-  padding-top: 24px;
-  background-color: rgba(0, 0, 0, 0.25);
-  padding-bottom: 16px;
-}*/
 
 .slider-item h2{
   padding-top: 24px;

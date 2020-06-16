@@ -188,7 +188,7 @@ input[type="number"]:focus {
 .upper-panel {
   width: 100%;
   min-height: 41px;
-  margin-bottom: 42px;
+  margin-bottom: 46px;
   background-color: var(--basic-darkblue);
   padding: 0;
 }
@@ -283,6 +283,12 @@ input[type="number"]:focus {
   background-color: var(--basic-green);
 }
 
+.header-content .container{
+  display: flex;
+  margin-bottom: 40px;
+  padding-top: 0;
+}
+
 /*Icons*/
 
 .upper-panel-item svg{
@@ -325,16 +331,9 @@ input[type="number"]:focus {
 
 /*Header content*/
 
-.main-navigation > .container{
-  display: flex;
-  margin-bottom: 40px;
-  padding-top: 0;
-}
-
 .description,
-.header-contact{
+.contact-information p{
   margin: 0;
-  padding: 0;
 }
 
 .description{
@@ -345,7 +344,17 @@ input[type="number"]:focus {
   margin-left: 30px;
 }
 
-.phone-number p:first-child{
+.contact-information{
+  font-style: normal;
+  color: var(--basic-blue);
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  margin-left: 93px;
+}
+
+
+.phone-number p{
   color: var(--basic-red);
   font-weight: bold;
   font-size: 21px;
@@ -353,26 +362,23 @@ input[type="number"]:focus {
   font-weight: bold;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-right: 40px;
-  padding-left: 73px;
+  padding-right: 42px;
+  padding-left: 71px;
   border: 3px solid var(--basic-white);
   margin: 0;
 }
 
-.header-contact{
-  font-style: normal;
-  color: var(--basic-blue);
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  margin-top: 2px;
-  padding-left: 5px;
+.phone-number{
+  position: relative;
+  align-self: center;
 }
 
-.phone-number{
-  margin-top: 3px;
-  margin-left: 91px;
-  position: relative;
+.catalog-header .contact-information{
+  margin-left: 93px;
+}
+
+.contact-information > p{
+  margin-top: 2px;
 }
 
 .phone-number::before{
@@ -387,23 +393,26 @@ input[type="number"]:focus {
   left: 39px;
 }
 
+.user-container{
+  margin-left: 52px;
+}
+
 .user-navigation{
   display: flex;
+  justify-content: space-between;
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: 16px;
-  margin-left: 73px;
+  margin-top: 14px;
+  margin-left: 70px;
 }
 
 .user-navigation a,
-.user > a{
+.user a{
   color: var(--basic-black);
   background-color: var(--basic-white);
   font-size: 21px;
   line-height: 21px;
-  margin: 0;
-  padding: 0;
 }
 
 .user-navigation li:first-child{
@@ -418,47 +427,43 @@ input[type="number"]:focus {
 
 .login:hover path,
 .user a:first-child:hover path,
-.user .logout:hover path{
+.user a:last-child:hover path{
   fill: var(--basic-blue);
 }
 
 .login:active path,
 .user a:first-child:active path,
-.user .logout:active path{
+.user a:last-child:active path{
   fill: var(--basic-grey);
 }
 
 .user{
-  margin: 0;
-  padding: 0;
   position: relative;
-  margin-left: 55px;
-  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--basic-white);
+  padding: 11px 0;
+  padding-left: 56px;
+  text-align: center;
 }
 
 .user a{
   margin: 0;
 }
 
-.user > a{
-  padding: 11px 0;
-  padding-left: 56px;
-  margin: 0;
-}
-
-.user > a:first-child svg {
+.user a:first-child svg {
   position: absolute;
   left: 15px;
-  top: 0;
+  top: 13px;
 }
 
-.user .logout {
+.user a:last-child {
   margin: 0;
-  margin-bottom: 7px;
+  padding: 0;
   margin-top: 2px;
-  padding: 11px 0;
-  padding-left: 17px;
-  padding-right: 14px;
+  padding-left: 20px;
+  padding-right: 17px;
+  align-self: center;
 }
 
 .user-account{
@@ -468,7 +473,7 @@ input[type="number"]:focus {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-top: 12px;
+  margin-top: 4px;
 }
 
 .user-account li:first-child{
@@ -966,7 +971,7 @@ input[type="number"]:focus {
 .index-columns{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 71px;
+  margin-bottom: 70px;
 }
 
 .section-title {
@@ -1749,7 +1754,7 @@ input[type="number"]:focus {
   margin-top: 59px;
   background-color: var(--basic-background);
   padding-top: 64px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
 }
 
 .hummerdrill-info h3{

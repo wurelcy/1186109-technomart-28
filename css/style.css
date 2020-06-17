@@ -218,7 +218,6 @@ input[type="number"]:focus {
 
 .search-form input::placeholder{
   color: var(--basic-white);
-  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   padding: 0;
@@ -229,7 +228,6 @@ input[type="number"]:focus {
 }
 
 .search-form input:focus {
-  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   background-color: var(--basic-white);
@@ -849,7 +847,6 @@ input[type="number"]:focus {
   background-color: var(--basic-blue);
   width: 240px;
   border: none;
-  font-family: inherit;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
@@ -964,7 +961,6 @@ input[type="number"]:focus {
 .section-title {
   margin: 0;
   margin-bottom: 24px;
-  font-family: inherit;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 30px;
@@ -1371,7 +1367,6 @@ input[type="number"]:focus {
 }
 
 .sort-btns a{
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 15px;
   text-transform: uppercase;
@@ -1647,7 +1642,6 @@ input[type="number"]:focus {
 }
 
 .favourites-btn{
-  font-family: inherit;
   color: var(--basic-blue);
   border: 3px solid var(--basic-green);
   border-radius: 2px;
@@ -2017,7 +2011,6 @@ input[type="number"]:focus {
 }
 
 .submit-button{
-  font-family: inherit;
   font-size: 14px;
   line-height: 18px;
   align-self: center;
@@ -2061,7 +2054,6 @@ input[type="number"]:focus {
 
 .modal-cart h2{
   position: relative;
-  font-family: inherit;
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;

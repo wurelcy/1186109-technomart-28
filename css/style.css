@@ -1396,9 +1396,10 @@ input[type="number"]:focus {
 
 .sort-btns .sorted {
   color: var(--basic-red);
+  border-bottom: 0;
 }
 
-.sort-btns button:not(.sorted):hover{
+.sort-btns a:not(.sorted):hover{
   color: var(--basic-black);
   border-bottom: 1px solid var(--basic-red);
 }

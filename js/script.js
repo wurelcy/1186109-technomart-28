@@ -4,6 +4,9 @@ var popup = document.querySelector(".pop-up");
 var feedbackLink = document.querySelector(".write-button");
 var feedbackPopup = document.querySelector(".modal-feedback");
 var feedbackClose = feedbackPopup.querySelector(".modal-close");
+var feedbackName = feedbackPopup.querySelector(".your-name");
+var feedbackEmail = feedbackPopup.querySelector(".email");
+var feedbackText = feedbackPopup.querySelector(".message-us");
 
 var mapLink = document.querySelector(".map-link");
 var mapPopup = document.querySelector(".modal-map");
@@ -26,11 +29,22 @@ var slideActive = document.querySelector(".current-service");
 feedbackLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.add("modal-show");
+  feedbackName.focus();
 });
 
 feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   feedbackPopup.classList.remove("modal-show");
+  loginPopup.classList.remove("modal-error");
+});
+
+feedbackPopup.addEventListener("submit", function (evt) {
+  if (!feedbackName.value || !feedbackEmail.value || !feedbackText.value) {
+    evt.preventDefault();
+    feedbackPopup.classList.remove("modal-error");
+    feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
+    feedbackPopup.classList.add("modal-error");
+  }
 });
 
 /*Map*/

@@ -16,10 +16,10 @@ var slideDrill = document.querySelector(".drill-slide");
 var indicatorFirst = document.querySelector(".first-indicator");
 var indicatorSecond = document.querySelector(".second-indicator");
 
-var cartLink = document.querySelector(".cart-btn");
-var cartPopup = document.querySelector(".modal-cart");
-var cartClose = cartPopup.querySelector(".modal-close");
-var cartContinue = cartPopup.querySelector(".close-link");
+var serviceSlideButtons = document.querySelectorAll(".service-btn");
+var serviceSlides = document.querySelectorAll(".service-slide");
+var serviceActive = document.querySelector(".service-active");
+var slideActive = document.querySelector(".current-service");
 
 /*Feedback*/
 
@@ -45,23 +45,6 @@ mapClose.addEventListener("click", function (evt) {
   mapPopup.classList.remove("modal-show");
 });
 
-/*Cart*/
-
-cartLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.add("modal-show");
-});
-
-cartClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.remove("modal-show");
-});
-
-cartContinue.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.remove("modal-show");
-});
-
 /*Esc*/
 
 window.addEventListener("keydown", function (evt) {
@@ -74,14 +57,14 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-/*Slider*/
+/*Features Slider*/
 
  slideBackButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (slideHummerdrill.classList.contains('current-slide')) {
     slideHummerdrill.classList.toggle("current-slide");
     slideDrill.classList.toggle("current-slide");
-    
+
     indicatorFirst.classList.toggle("current-indicator");
     indicatorSecond.classList.toggle("current-indicator");
   }
@@ -97,3 +80,27 @@ slideFwdButton.addEventListener("click", function (evt) {
     indicatorSecond.classList.toggle("current-indicator");
   }
 });
+
+/*Service Slider*/
+
+serviceSlideButtons.forEach(function(slideButton, index) {
+  if (slideButton.classList.contains('service-active')) {
+    serviceActive = slideButton;
+  }
+  slideButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    serviceActive.classList.remove("service-active");
+    serviceActive = slideButton;
+    slideButton.classList.add('service-active');
+    serviceSlides.forEach(function(slide, slideIndex) {
+      if (slide.classList.contains('current-service')) {
+        slideActive = slide;
+      }
+      if (index == slideIndex){
+        slideActive.classList.remove("current-service");
+        slideActive = slide;
+        slide.classList.add('current-service');
+      }
+      });
+    });
+  });

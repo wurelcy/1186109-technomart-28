@@ -74,7 +74,7 @@ img {
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          margin: 0;
+  margin: 0;
 }
 
 input[type="number"] {
@@ -175,7 +175,6 @@ input[type="number"]:focus {
 .main-navigation-wrapper li:last-child a{
   margin-right: 16px;
 }
-
 
 .main-navigation-wrapper a:hover {
   background-color: var(--basic-darkblue);
@@ -714,7 +713,6 @@ input[type="number"]:focus {
   background-color: var(--basic-red);
   top: 2px;
   left: 2px;
-
 }
 
 .slider-item h2{
@@ -779,7 +777,6 @@ input[type="number"]:focus {
 
 .popular{
   margin-top: 59px;
-  /*margin-bottom: 20px;*/
   background-color: var(--basic-warm);
   display: flex;
   justify-content: space-between;
@@ -810,7 +807,7 @@ input[type="number"]:focus {
 }
 
 .services .container{
-    position: relative;
+  position: relative;
 }
 
 .services .section-title{
@@ -1507,14 +1504,14 @@ input[type="number"]:focus {
 }
 
 .popular-list li:nth-child(2) .catalog-item-image{
-    margin-top: 28px;
-    margin-bottom: 8px;
+  margin-top: 28px;
+  margin-bottom: 8px;
 }
 
 .popular-list li:first-child .catalog-item-image{
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-bottom: 0;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 
 .popular-list li:first-child .catalog-item-title{

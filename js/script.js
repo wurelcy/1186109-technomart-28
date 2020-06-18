@@ -1,5 +1,5 @@
 
-var popup = document.querySelector(".pop-up");
+var popups = document.querySelectorAll(".pop-up");
 
 var feedbackLink = document.querySelector(".write-button");
 var feedbackPopup = document.querySelector(".modal-feedback");
@@ -34,8 +34,8 @@ feedbackLink.addEventListener("click", function (evt) {
 
 feedbackClose.addEventListener("click", function (evt) {
   evt.preventDefault();
+  feedbackPopup.classList.remove("modal-error");
   feedbackPopup.classList.remove("modal-show");
-  loginPopup.classList.remove("modal-error");
 });
 
 feedbackPopup.addEventListener("submit", function (evt) {
@@ -61,14 +61,16 @@ mapClose.addEventListener("click", function (evt) {
 
 /*Esc*/
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (popup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
+popups.forEach(function(popup){
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (popup.classList.contains("modal-show")) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.classList.remove("modal-show");
+      }
     }
-  }
+  });
 });
 
 /*Features Slider*/

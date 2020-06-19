@@ -1,97 +1,105 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>Каталог товаров</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="page-body">
   <header class="main-navigation">
-      <div class="upper-panel catalog-header">
-        <div class="container">
-          <a class="main-header-logo catalog-logo" href="index.html">
-            <img src="img/logo-technomart.svg" width="107" height="18" alt="Логотип магазина">
-          </a>
-          <div class="search-field">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label for="search-field" class="visually-hidden">Поиск</label>
-              <input class="search" type="search" name="search" id="search-field" placeholder="Поиск:">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-              </svg>
-            </form>
-          </div>
-          <div class="upper-panel-item">
-            <a href="blank.html">
-              <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
-                <path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/>
-              </svg>
-              Закладки:
-              <span class="bookmark-counter">0</span>
-            </a>
-          </div>
-          <div class="upper-panel-item active">
-            <a href="blank.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
-                <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
-                <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
-                <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
-              </svg>
-              Корзина:
-              <span class="cart-counter">10</span>
-            </a>
-          </div>
-          <div class="make-order">
-            <a href="blank.html">Оформить заказ</a>
-          </div>
-        </div>
-      </div>
+    <div class="upper-panel catalog-header">
       <div class="container">
-        <p class="description">
-             Интернет-магазин<br>
-             строительных материалов<br>
-             и инструментов для ремонта</p>
-          <div class="phone-number">
-            <p>+7 (812) 555-05-55</p>
-            <p class="header-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </div>
-            <div class="user"class="user-logged">
-              <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                  <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
-                </svg>
-                Равшан Джамшутович
-              </a>
-              <a href="" aria-label="logout" class="logout">
-                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
-                  <g fill="#c5c5c5">
-                    <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
-                    <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
-                  </g>
-                </svg>
-              </a>
-              <ul class="user-account">
-                <li><a href="blank.html">Мои заказы</a></li>
-                <li><a href="">Личный кабинет</a></li>
-              </ul>
-            </div>
+        <a class="main-header-logo catalog-logo" href="index.html">
+          <img src="img/logo-technomart.svg" width="107" height="18" alt="Логотип магазина">
+        </a>
+        <div class="search-field">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search-field" class="visually-hidden">Поиск</label>
+            <input class="search" type="search" name="search" id="search-field" placeholder="Поиск:">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+              <path fill="#ffffff"
+                d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
+            </svg>
+          </form>
+        </div>
+        <div class="upper-panel-item">
+          <a href="blank.html">
+            <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+              <path fill="#ffffff"
+                d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
+            </svg>
+            Закладки:
+            <span class="bookmark-counter">0</span>
+          </a>
+        </div>
+        <div class="upper-panel-item active">
+          <a href="blank.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+              <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5" />
+              <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5" />
+              <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z" />
+            </svg>
+            Корзина:
+            <span class="cart-counter">10</span>
+          </a>
+        </div>
+        <div class="make-order">
+          <a href="blank.html">Оформить заказ</a>
         </div>
       </div>
-      <nav class="main-navigation-wrapper">
-        <div class="container">
-          <ul class="menu">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="blank.html">Компания</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="blank.html">Новости</a></li>
-            <li><a href="blank.html">Спецпредложения</a></li>
-            <li><a href="blank.html">Доставка</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-        </div>
-      </nav>
+    </div>
+    <div class="container">
+      <p class="description">
+        Интернет-магазин<br>
+        строительных материалов<br>
+        и инструментов для ремонта</p>
+      <div class="phone-number">
+        <p>+7 (812) 555-05-55</p>
+        <p class="header-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+      </div>
+      <div class="user" class="user-logged">
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+            <path fill="#c5c5c5"
+              d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
+          </svg>
+          Равшан Джамшутович
+        </a>
+        <a href="" aria-label="logout" class="logout">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+            <g fill="#c5c5c5">
+              <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z" />
+              <path fill="#c5c5c5"
+                d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z" />
+            </g>
+          </svg>
+        </a>
+        <ul class="user-account">
+          <li><a href="blank.html">Мои заказы</a></li>
+          <li><a href="">Личный кабинет</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <nav class="main-navigation-wrapper">
+      <div class="container">
+        <ul class="menu">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="blank.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="blank.html">Новости</a></li>
+          <li><a href="blank.html">Спецпредложения</a></li>
+          <li><a href="blank.html">Доставка</a></li>
+          <li><a href="blank.html">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <main class="">
     <div class="container">
@@ -141,51 +149,66 @@
               <legend>Производители:</legend>
               <ul>
                 <li class="filter-checkbox filter-option">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="bosch"
+                    id="filter-bosch" checked>
                   <label for="filter-bosch">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
-                      <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
-                      <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      <path fill="#c5c5c5"
+                        d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                      <path fill="#c5c5c5"
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                     </svg>
                     Bosch
                   </label>
                 </li>
                 <li class="filter-checkbox filter-option">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol" id="filter-interscol">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="interscol"
+                    id="filter-interscol">
                   <label for="filter-interscol">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
-                      <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
-                      <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      <path fill="#c5c5c5"
+                        d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                      <path fill="#c5c5c5"
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                     </svg>
                     Интерскол
                   </label>
                 </li>
                 <li class="filter-checkbox filter-option">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita" id="filter-makita" checked>
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="makita"
+                    id="filter-makita" checked>
                   <label for="filter-makita">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
-                      <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
-                      <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      <path fill="#c5c5c5"
+                        d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                      <path fill="#c5c5c5"
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                     </svg>
                     Makita
                   </label>
                 </li>
                 <li class="filter-checkbox filter-option">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt" id="filter-dewalt">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="dewalt"
+                    id="filter-dewalt">
                   <label for="filter-dewalt">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
-                      <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
-                      <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      <path fill="#c5c5c5"
+                        d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                      <path fill="#c5c5c5"
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                     </svg>
                     Dewalt
                   </label>
                 </li>
                 <li class="filter-checkbox filter-option">
-                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi" id="filter-hitachi">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="hitachi"
+                    id="filter-hitachi">
                   <label for="filter-hitachi">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23">
-                      <path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/>
-                      <path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/>
+                      <path fill="#c5c5c5"
+                        d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z" />
+                      <path fill="#c5c5c5"
+                        d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z" />
                     </svg>
                     Hitachi
                   </label>
@@ -196,11 +219,13 @@
               <legend class="power-section">Питание:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-type" value="battery" id="battery" checked>
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-type"
+                    value="battery" id="battery" checked>
                   <label for="battery">Аккумуляторные</label>
                 </li>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-type" value="network" id="network">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="power-type"
+                    value="network" id="network">
                   <label for="network">Сетевые</label>
                 </li>
               </ul>
@@ -219,12 +244,12 @@
             <div class="sort-direction">
               <a class="direction-btn sorted" href="" aria-label="sort from min">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+                  <path fill="#231F20" d="M5.5 0L0 10h11z" />
                 </svg>
               </a>
               <a class="direction-btn" href="" aria-label="sort from max">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path fill="#231F20" d="M5.5 10L0 0h11"/>
+                  <path fill="#231F20" d="M5.5 10L0 0h11" />
                 </svg>
               </a>
             </div>
@@ -400,11 +425,13 @@
     <section class="hummerdrill-info">
       <div class="container">
         <h3>Пара слов о перфораторах</h3>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче,
           бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
           шуруповерта и отбойного молотка.<br>
-          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и
+          ударная
           дрель.</p>
       </div>
     </section>
@@ -416,7 +443,7 @@
           <img src="img/logo-technomart.svg" width="136" height="21" alt="Логотип магазина">
         </a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-           +7 (812) 555-05-55</p>
+          +7 (812) 555-05-55</p>
       </div>
       <div class="footer-navigation">
         <ul>
@@ -437,7 +464,7 @@
     <div class="footer-wrapper">
       <div class="container">
         <p>© 2010–2019 Компания «Техномарт»<br>
-           Все права защищены</p>
+          Все права защищены</p>
         <ul class="social">
           <li>
             <a href="#" class="social-btn">
@@ -456,10 +483,10 @@
           </li>
         </ul>
         <p>Обратная связь:<br>
-           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p>Разработано —<br>
-           <a href="htmlacademy.ru">htmlacademy.ru</a>
+          <a href="htmlacademy.ru">htmlacademy.ru</a>
         </p>
       </div>
     </div>
@@ -474,6 +501,7 @@
     <button class="modal-close" type="button" aria-label="close-popup"></button>
   </section>
 
-<script src="js/scriptCart.js"></script>
+  <script src="js/scriptCart.js"></script>
 </body>
+
 </html>

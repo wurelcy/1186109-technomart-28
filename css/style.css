@@ -26,6 +26,15 @@
   --special-navyblue: #1D2739;
   --special-grey: #B5B5B5;
   --special-shadow: #8E1E26;
+
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-light: rgba(0, 0, 0, 0.25);
+  --shadow-modal: rgba(0, 0, 0, 0.2);
+  --shadow-lightest: rgba(0, 0, 0, 0.15);
+  --transparent-features: rgba(255, 255, 255, 0.3);
+  --transparent-upperpanel: rgba(255, 255, 255, 0.5);
+  --transparent-features-hover: rgba(197, 197, 197, 0.3);
+  --transparent-features-active: rgba(169, 169, 169, 0.3);
 }
 
 /* Animations */
@@ -287,7 +296,7 @@ input[type="number"]:focus {
 
 .upper-panel-item a:active{
   background-color: var(--special-darkblue);
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--transparent-upperpanel);
 }
 
 .make-order a{
@@ -298,7 +307,7 @@ input[type="number"]:focus {
   background-color: var(--special-green);
 }
 .make-order a:active{
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--transparent-upperpanel);
   background-color: var(--basic-green);
 }
 
@@ -608,18 +617,18 @@ input[type="number"]:focus {
   width: 135px;
   margin-top: 14px;
   color: var(--basic-white);
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--transparent-features);
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
 }
 
 .features-description:hover{
-  background-color: rgba(197, 197, 197, 0.3);
+  background-color: var(--transparent-features-hover);
 }
 
 .features-description:active{
-  background-color: rgba(169, 169, 169, 0.3);
+  background-color: var(--transparent-features-active);
 }
 
 .features-item::before{
@@ -753,7 +762,7 @@ input[type="number"]:focus {
 
 .slider-item p,
 .slider-item h2{
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: var(--shadow-light);
   padding-left: 24px;
 }
 
@@ -916,6 +925,7 @@ input[type="number"]:focus {
   color: var(--basic-blue);
   text-transform: uppercase;
   margin: 0;
+  padding: 0;
 }
 
 .service-credit a{
@@ -1393,7 +1403,7 @@ input[type="number"]:focus {
   border-bottom: 1px dotted var(--basic-red);
   padding: 0;
   margin: 0;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--shadow-dark);
 }
 
 .sort-btns li:first-child{
@@ -1496,7 +1506,7 @@ input[type="number"]:focus {
 
 .catalog-item:hover,
 .manufacturer-item:hover{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px var(--shadow-lightest);
 }
 
 .manufacturer-item{
@@ -1791,15 +1801,17 @@ input[type="number"]:focus {
 .footer-info p{
   margin: 0;
   padding-top: 22px;
+  padding-left: 4px;
 }
 
 .footer-logo{
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 220px;
   height: 68px;
+  padding: 21px 42px;
+  margin: 0;
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: inset 0px -5px 0px var(--shadow-light);
 }
 
 .main-footer .container{
@@ -1834,7 +1846,7 @@ input[type="number"]:focus {
   margin: 0;
   display: flex;
   list-style: none;
-  margin-left: 60px;
+  margin-left: 58px;
 }
 
 .footer-navigation a{
@@ -1907,9 +1919,13 @@ input[type="number"]:focus {
   color: var(--basic-yellow);
 }
 
+.footer-wrapper p:first-child {
+  margin-top: 2px;
+}
+
 .footer-wrapper p:last-child {
-  margin-left: 51px;
-  margin-right: 15px;
+  margin-left: 48px;
+  margin-right: 14px;
 }
 
 .footer-wrapper p a:hover{
@@ -1952,7 +1968,7 @@ input[type="number"]:focus {
 .modal-map{
   width: 943px;
   height: 449px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2), 0px -7px 0px var(--basic-red);
+  box-shadow: 0px 4px 20px var(--shadow-modal), 0px -7px 0px var(--basic-red);
 }
 
 .modal-map iframe{
@@ -1966,7 +1982,7 @@ input[type="number"]:focus {
   top: 120px;
   width: 620px;
   bottom: auto;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2), 0px -7px 0px var(--basic-red);
+  box-shadow: 0px 4px 20px var(--shadow-modal), 0px -7px 0px var(--basic-red);
 }
 
 .feedback-form{
@@ -2066,7 +2082,7 @@ input[type="number"]:focus {
   align-items: center;
   top: 120px;
   width: 620px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2), 0px -7px 0px var(--basic-red);
+  box-shadow: 0px 4px 20px var(--shadow-modal), 0px -7px 0px var(--basic-red);
   background-color: var(--basic-white);
   bottom: auto;
 }

@@ -428,7 +428,8 @@ input[type="number"]:focus {
   margin-left: 30px;
 }
 
-.phone-number p:first-child{
+.phone{
+  display: inline-block;
   color: var(--basic-red);
   font-weight: bold;
   font-size: 21px;
@@ -2198,6 +2199,7 @@ input[type="number"]:focus {
   line-height: 18px;
   text-transform: uppercase;
   margin-left: 114px;
+  vertical-align: middle;
 }
 
 .button-area a:last-child{

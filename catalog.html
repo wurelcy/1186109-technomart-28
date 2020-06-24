@@ -7,12 +7,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap"
     rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style-minimize.css">
+  <link href="css/normalize-minimize.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
-  <header class="main-navigation">
+  <header class="main-navigation catalog-navigation">
     <div class="upper-panel catalog-header">
       <div class="container">
         <a class="main-header-logo catalog-logo" href="index.html">
@@ -29,7 +29,7 @@
           </form>
         </div>
         <div class="upper-panel-item">
-          <a href="blank.html">
+          <a href="blank.html" class="upper-panel-link">
             <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
               <path fill="#ffffff"
                 d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z" />
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container catalog-header-content">
       <p class="description">
         Интернет-магазин<br>
         строительных материалов<br>
@@ -63,8 +63,8 @@
         <a href="tel:+78125550555" class="phone">+7 (812) 555-05-55</a>
         <p class="header-contact">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <div class="user user-logged">
-        <a href="">
+      <div class="user">
+        <a href="" class="user-logged">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
             <path fill="#c5c5c5"
               d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z" />
@@ -89,13 +89,13 @@
     <nav class="main-navigation-wrapper">
       <div class="container">
         <ul class="menu">
-          <li><a href="index.html">Главная</a></li>
+          <li class="first-link"><a href="index.html">Главная</a></li>
           <li><a href="blank.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="blank.html">Новости</a></li>
           <li><a href="blank.html">Спецпредложения</a></li>
           <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
+          <li class="last-link"><a href="blank.html">Контакты</a></li>
         </ul>
       </div>
     </nav>
@@ -125,7 +125,7 @@
           <h3>Фильтр:</h3>
           <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset>
-              <legend>Цена:</legend>
+              <legend class="filter-price">Цена:</legend>
               <div class="range-filter">
                 <div class="range-controls">
                   <div class="scale">
@@ -237,8 +237,8 @@
             <h3>Сортировка:</h3>
             <ul class="sort-btns">
               <li><a href="" class="sorted">По цене</a></li>
-              <li><a href="">По типу</a></li>
-              <li><a href="">По функционалу</a></li>
+              <li><a href="" class="sort-btns-link">По типу</a></li>
+              <li><a href="" class="sort-btns-link">По функционалу</a></li>
             </ul>
             <div class="sort-direction">
               <a class="direction-btn sorted" href="" aria-label="sort from min">
@@ -246,7 +246,7 @@
                   <path fill="#231F20" d="M5.5 0L0 10h11z" />
                 </svg>
               </a>
-              <a class="direction-btn" href="" aria-label="sort from max">
+              <a class="direction-btn max-sort" href="" aria-label="sort from max">
                 <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                   <path fill="#231F20" d="M5.5 10L0 0h11" />
                 </svg>
@@ -482,10 +482,10 @@
           </li>
         </ul>
         <p>Обратная связь:<br>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p>Разработано —<br>
-          <a href="htmlacademy.ru">htmlacademy.ru</a>
+          <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
     </div>

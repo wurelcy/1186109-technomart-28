@@ -545,11 +545,11 @@ input[type="number"]:focus {
 }
 
 .user-logged {
-	display: flex;
-	justify-content: space-between;
-	overflow: auto;
-	flex-wrap: wrap;
-	max-width: 249px;
+	display: inline-block;
+	max-width: 242px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .user .logout {
